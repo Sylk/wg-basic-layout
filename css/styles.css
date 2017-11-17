@@ -37,6 +37,12 @@ html {
     width: 50%;
 }
 
+input {
+    margin-bottom: 30px;
+    width: 65%;
+    height: 30px;
+}
+
 .websites {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -46,10 +52,10 @@ html {
 }
 
 .websites li {
-    border: rgba(255, 255, 255, 0) 10px solid;
-    box-sizing: unset;
+    border: rgba(255, 255, 255, 0.959) 7px solid;
+    box-sizing: border-box;
     display: flex;
-    height:100px;
+    height:150px;
     width:100%;
     align-items: center;
     justify-content: center;
@@ -89,7 +95,8 @@ a {
     color: #111;
 }
 
-h1 {
+.time {
+    margin-bottom: 25px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 5em;
