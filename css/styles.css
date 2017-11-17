@@ -1,0 +1,97 @@
+html {
+    background: #F9F9F9;
+}
+
+.nav-header ul {
+    list-style: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    margin-top: 13px;
+    margin-right: 13px;
+}
+
+.nav-header li {
+    display: inline-block;
+    margin-right:6px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.nav-header li a {
+    text-decoration: none;
+}
+
+.container-div {
+    margin-top: 10%;
+    width: 100%;
+    height: 580px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* background: rgba(107, 42, 161, 0.794) */
+}
+
+.middle-content {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+}
+
+.websites {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.websites li {
+    border: rgba(255, 255, 255, 0) 10px solid;
+    box-sizing: unset;
+    display: flex;
+    height:100px;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+.websites li a {
+    text-decoration: none;
+}
+/* should make some nice gradients for this */
+.mastodon { 
+    background: rgba(194, 75, 20, 0.527);
+}
+
+.steemit {
+    background: rgba(38, 68, 4, 0.541);
+}
+
+.dropbox {
+    background: rgb(67, 67, 70);
+}
+
+.protonmail {
+    background: rgba(251, 255, 0, 0.5);
+}
+
+.localhost {
+    background: rgb(0, 255, 128);
+}
+
+.portfolio{
+    background: rgb(73, 73, 129);
+}
+
+a {
+    color: #111;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 5em;
+    color: #111
+}
