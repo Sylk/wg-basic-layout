@@ -1,5 +1,5 @@
 html {
-    background: #F9F9F9;
+    background: rgb(250, 250, 250);
 }
 
 .nav-header ul {
@@ -13,7 +13,7 @@ html {
 
 .nav-header li {
     display: inline-block;
-    margin-right:6px;
+    margin-right: 6px;
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -28,7 +28,6 @@ html {
     display: flex;
     align-content: center;
     justify-content: center;
-    /* background: rgba(107, 42, 161, 0.794) */
 }
 
 .middle-content {
@@ -41,54 +40,74 @@ input {
     margin-bottom: 30px;
     width: 65%;
     height: 30px;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px rgb(244, 244, 244) solid;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.452);
+    padding: 2px 13px;
+}
+
+input:placeholder-shown {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
 }
 
 .websites {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .websites li {
-    border: rgba(255, 255, 255, 0.959) 7px solid;
-    box-sizing: border-box;
+    border-radius: 2px;
     display: flex;
-    height:150px;
-    width:100%;
+    height: 150px;
+    width: 100%;
     align-items: center;
     justify-content: center;
     font-family: 'Oxygen', sans-serif;
-
 }
 
-.websites li a {
+.websites a {
     text-decoration: none;
+    font-size: 1.3em;
 }
-/* should make some nice gradients for this */
-.mastodon { 
-    background: rgba(194, 75, 20, 0.527);
+
+.websites li:hover {
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.452);
+    border: 1px rgb(54, 54, 59) solid;
+}
+
+
+/* TODO: maybe make a glow transition in js??? */
+
+.protonmail {
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0.466) 1%, rgba(73, 73, 129, 0.575));
 }
 
 .steemit {
-    background: rgba(38, 68, 4, 0.541);
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0.466) 1%, rgba(0, 246, 53, 0.685));
 }
 
-.dropbox {
-    background: rgb(67, 67, 70);
+.linkedin {
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0.466) 1%, rgba(24, 104, 233, 0.431));
 }
 
-.protonmail {
-    background: rgba(251, 255, 0, 0.5);
+.mastodon {
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0.466) 1%, rgba(2, 82, 114, 0.541));
 }
 
 .localhost {
-    background: rgb(0, 255, 128);
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0.466) 1%, rgb(0, 255, 128));
 }
 
-.portfolio{
-    background: rgb(73, 73, 129);
+.github {
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0.466) 1%, rgba(44, 44, 44, 0.5));
 }
 
 a {
@@ -100,5 +119,14 @@ a {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 5em;
-    color: #111
+    color: rgb(71, 71, 71);
 }
+
+
+/* TODO: Make some keyframes to make the colors look slightly lively
+    @keyframes colorRotationProtonmail {
+    0%   {background: linear-gradient(to bottom, rgba(250, 250, 250, 0.466) 1%, rgba(73, 73, 129, 0.575));}
+    70% {background: linear-gradient(to bottom, rgba(250, 250, 250, 0.466) 40%, rgb(99, 73, 129));}
+    100%   {background: linear-gradient(to bottom, rgba(250, 250, 250, 0.466) 1%, rgba(73, 73, 129, 0.575));}
+    } 
+*/
